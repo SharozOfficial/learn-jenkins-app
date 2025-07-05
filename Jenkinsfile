@@ -5,6 +5,8 @@ pipeline {
         stage('w/o docker') {
             steps {
                 sh 'echo "Without docker"'
+                sh 'touch catfile.txt'
+                //sh 'echo "catfile">> w/o docker/catfile.txt
             }
         }
 
